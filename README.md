@@ -27,3 +27,6 @@ You can display a mini toolbar when selecting text with the mouse. Alternatively
 **Multi-Document-Interface(MDI)**
 
 This software employs a Multi-Document Interface (MDI), allowing you to display multiple documents simultaneously.
+
+# Postscript
+*Currently, we only support Japanese, but we are considering adding multilingual support in the future.*

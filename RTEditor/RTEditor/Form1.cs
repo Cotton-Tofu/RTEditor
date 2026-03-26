@@ -1011,7 +1011,7 @@ namespace RTEditor
             //設定の復元
             AppLoadSettings();
 
-            //QAT
+            //QATの位置
             if (Properties.Settings.Default.QATLoaction == 0)
             {
                 kryptonRibbon1.QATLocation = QATLocation.Above;
@@ -1029,6 +1029,7 @@ namespace RTEditor
 
         }
 
+        //Edge WebViewの初期化とランタイムフォルダの生成
         async Task LoadEBDataFolder()
         {
             try

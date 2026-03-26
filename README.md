@@ -28,5 +28,11 @@ You can display a mini toolbar when selecting text with the mouse. Alternatively
 
 This software employs a Multi-Document Interface (MDI), allowing you to display multiple documents simultaneously.
 
+<img width="1397" height="855" alt="image" src="https://github.com/user-attachments/assets/fcf71311-4944-4bac-bd8e-b1154deb92b9" />
+
+**Office-style UI**
+
+It replicates the UI style of Office 2007/2010, and you can change the theme in the settings.
+
 # Postscript
 *Currently, we only support Japanese, but we are considering adding multilingual support in the future.*

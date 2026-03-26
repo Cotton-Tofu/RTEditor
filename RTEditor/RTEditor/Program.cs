@@ -21,7 +21,7 @@ namespace RTEditor
 
         static void Main(string[] args)
         {
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1JGaF5cXGpCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdlWX5fdHVURmBcVEZxV0JWYEs=");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Your_Api_Key");
             // アプリ全体の UI カルチャを先に設定
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
 

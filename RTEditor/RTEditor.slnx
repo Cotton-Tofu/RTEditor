@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="RTEditor/RTEditor.csproj" Id="49962c58-cab7-4c46-b92e-338e411d07d5" />
+  <Project Path="RTEditor_Setup/RTEditor_Setup.vdproj" Type="Installer">
+    <Build />
+  </Project>
+</Solution>

@@ -1,4 +1,4 @@
-﻿using ComponentFactory.Krypton.Docking;
+using ComponentFactory.Krypton.Docking;
 using ComponentFactory.Krypton.Navigator;
 using ComponentFactory.Krypton.Ribbon;
 using ComponentFactory.Krypton.Toolkit;
@@ -48,7 +48,6 @@ using Windows.Security.Credentials.UI;
 using static Microsoft.WindowsAPICodePack.ApplicationServices.ApplicationRestartRecoveryManager;
 using static Microsoft.WindowsAPICodePack.ApplicationServices.AppRestartRecoveryNativeMethods;
 using static RTEditor.Form1;
-using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 using OpenFileDialog = System.Windows.Forms.OpenFileDialog;
@@ -472,6 +471,7 @@ namespace RTEditor
         //親ウィンドウを閉じたときにすべての子ウィンドウを閉じる（子ウィンドウ単体ではすべて閉じない）
         public bool IsFormClosing { get; set; } = false;
 
+        //何回Mdiウィンドウを閉じたか数えるためのカウンター。親ウィンドウを閉じるときにすべての子ウィンドウを閉じるために必要
         public int count { get; set; } = 0;
         Form activeform { get; set; }
         String fname { get; set; }
@@ -1011,7 +1011,7 @@ namespace RTEditor
             //設定の復元
             AppLoadSettings();
 
-            //QATの位置
+            //QAT
             if (Properties.Settings.Default.QATLoaction == 0)
             {
                 kryptonRibbon1.QATLocation = QATLocation.Above;
@@ -1024,33 +1024,45 @@ namespace RTEditor
 
             //EdgeWebViewの初期化
             LoadEBDataFolder();
-            
+
+
+
 
 
         }
 
-        //Edge WebViewの初期化とランタイムフォルダの生成
+        bool isWebView2RuntimeAvailable = true;
         async Task LoadEBDataFolder()
         {
-            try
+            if(isWebView2RuntimeAvailable == true)
             {
-                var env = await CoreWebView2Environment.CreateAsync(null,Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"RTEditor", "WebView2"));
-
-                await webView21.EnsureCoreWebView2Async(env);
-            }
-            catch
-            {
-                MessageBox.Show("このソフトウェアでは Edge WebView2 Runtime を使用しますがインストールが確認できないため起動できませんでした。Edge WebView2 Runtime のダウンロードサイトに移動します。", "RTEditor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                Process.Start(new ProcessStartInfo
+                try
                 {
-                    FileName = "https://go.microsoft.com/fwlink/p/?LinkId=2124703",
-                    UseShellExecute = true
-                });
+                    var env = await CoreWebView2Environment.CreateAsync(null, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "RTEditor", "WebView2"));
+                    await webView21.EnsureCoreWebView2Async(env);
+                }
+                catch
+                {
+                    string appPath = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
+                    string webView2RuntimePath = appPath+@"\RTEditor.exe.WebView2";
+                    if (Directory.Exists(webView2RuntimePath) == false)
+                    {
+                        DialogResult result = MessageBox.Show("このソフトウェアでは Edge WebView2 Runtime を使用しますがインストールが確認できないため起動できません。Edge WebView2 Runtime のダウンロードサイトに移動しますか？、「いいえ」をクリックするとソフトウェアは起動を続行しますが、一部の機能が制限される可能性があります。", "RTEditor", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (result == DialogResult.Yes)
+                        {
+                            Process.Start(new ProcessStartInfo
+                            {
+                                FileName = "https://go.microsoft.com/fwlink/p/?LinkId=2124703",
+                                UseShellExecute = true
+                            });
 
-                System.Windows.Forms.Application.Exit();
+                            Application.Exit();
+
+                        }
+                    }
+                }
+
             }
-
         }
 
 
@@ -2631,6 +2643,8 @@ namespace RTEditor
             kryptonRibbonGroupButton12.Enabled = true;
             //Webリンク挿入ボタン
             kryptonRibbonGroupButton13.Enabled = true;
+            //URIリンク挿入ボタン
+            kryptonRibbonGroupButton58.Enabled = true;
             //テーブル挿入ボタン
             kryptonRibbonGroupButton21.Enabled = true;
             //グラフ挿入ボタン
@@ -2647,6 +2661,8 @@ namespace RTEditor
             kryptonRibbonGroupButton19.Enabled = true;
             //カスタムの日付・時刻挿入ボタン
             kryptonRibbonGroupButton20.Enabled = true;
+            //あいさつ文挿入ボタン
+            kryptonRibbonGroupButton28.Enabled = true;
 
             //レイアウト・校閲・リーダー
             //インデント左
@@ -2852,6 +2868,8 @@ namespace RTEditor
             kryptonRibbonGroupButton12.Enabled = false;
             //Webリンク挿入ボタン
             kryptonRibbonGroupButton13.Enabled = false;
+            //URIリンク挿入ボタン
+            kryptonRibbonGroupButton58.Enabled = false;
             //テーブル挿入ボタン
             kryptonRibbonGroupButton21.Enabled = false;
             //グラフ挿入ボタン
@@ -2868,6 +2886,8 @@ namespace RTEditor
             kryptonRibbonGroupButton19.Enabled = false;
             //カスタムの日付・時刻挿入ボタン
             kryptonRibbonGroupButton20.Enabled = false;
+            //あいさつ文挿入ボタン
+            kryptonRibbonGroupButton28.Enabled = false; 
 
             //レイアウト・校閲・リーダー
             //インデント左
@@ -7922,6 +7942,39 @@ namespace RTEditor
             else if (kryptonRibbonGroupButton26.TextLine1 == "・状態")
             {
                 kryptonContextMenuItem73_Click(sender, e);
+            }
+        }
+
+        private void kryptonRibbonGroupButton28_Click(object sender, EventArgs e)
+        {
+        }
+
+        //あいさつ文を挿入する処理
+        private void kryptonRibbonGroupButton28_Click_1(object sender, EventArgs e)
+        {
+            using (GreetingMessageInsertionDialog_JPOnly greetingMessageInsertionDialog_JPOnly = new GreetingMessageInsertionDialog_JPOnly())
+            {
+                if(greetingMessageInsertionDialog_JPOnly.ShowDialog() == DialogResult.OK)
+                {
+                    Form activeForm = this.ActiveMdiChild;
+                    richTextBox = activeForm.Controls.OfType<RichTextBox>().FirstOrDefault();
+                    richTextBox.AppendText(greetingMessageInsertionDialog_JPOnly.GreetingMessage);
+                }
+            }
+          
+        }
+
+        //URIスキームを挿入する処理
+        private void kryptonRibbonGroupButton58_Click(object sender, EventArgs e)
+        {
+            using (InsertURIDialog insertURIDialog = new InsertURIDialog())
+            {
+                if (insertURIDialog.ShowDialog() == DialogResult.OK)
+                {
+                    Form activeForm = this.ActiveMdiChild;
+                    richTextBox = activeForm.Controls.OfType<RichTextBox>().FirstOrDefault();
+                    richTextBox.AppendText(insertURIDialog.URI);
+                }
             }
         }
 

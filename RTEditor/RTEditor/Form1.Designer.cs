@@ -1,4 +1,4 @@
-﻿namespace RTEditor
+namespace RTEditor
 {
     partial class Form1
     {
@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Syncfusion.Windows.Forms.Tools.CustomImageCollection customImageCollection2 = new Syncfusion.Windows.Forms.Tools.CustomImageCollection();
-            Syncfusion.Windows.Forms.Tools.ResetButton resetButton2 = new Syncfusion.Windows.Forms.Tools.ResetButton();
+            Syncfusion.Windows.Forms.Tools.CustomImageCollection customImageCollection5 = new Syncfusion.Windows.Forms.Tools.CustomImageCollection();
+            Syncfusion.Windows.Forms.Tools.ResetButton resetButton5 = new Syncfusion.Windows.Forms.Tools.ResetButton();
             this.kryptonRibbonGroup39 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple39 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroupButton53 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
@@ -252,8 +252,9 @@
             this.kryptonRibbonGroupTriple7 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroupButton12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroup10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupLines14 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLines();
             this.kryptonRibbonGroupButton13 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton58 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroup14 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroupButton21 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
@@ -273,6 +274,9 @@
             this.kryptonRibbonGroupButton19 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupTriple11 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroupButton20 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup20 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple18 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton28 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonTab3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonRibbonGroup21 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple19 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
@@ -2301,7 +2305,8 @@
             this.kryptonRibbonGroup19,
             this.kryptonRibbonGroup11,
             this.kryptonRibbonGroup12,
-            this.kryptonRibbonGroup13});
+            this.kryptonRibbonGroup13,
+            this.kryptonRibbonGroup20});
             this.kryptonRibbonTab2.KeyTip = "I";
             this.kryptonRibbonTab2.Text = "挿入";
             // 
@@ -2417,24 +2422,33 @@
             this.kryptonRibbonGroup10.DialogBoxLauncher = false;
             this.kryptonRibbonGroup10.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup10.Image")));
             this.kryptonRibbonGroup10.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
-            this.kryptonRibbonGroupTriple8});
+            this.kryptonRibbonGroupLines14});
             this.kryptonRibbonGroup10.KeyTipGroup = "ZW";
-            this.kryptonRibbonGroup10.TextLine1 = "Web";
+            this.kryptonRibbonGroup10.TextLine1 = "リンク";
             // 
-            // kryptonRibbonGroupTriple8
+            // kryptonRibbonGroupLines14
             // 
-            this.kryptonRibbonGroupTriple8.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
-            this.kryptonRibbonGroupButton13});
-            this.kryptonRibbonGroupTriple8.MinimumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines14.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton13,
+            this.kryptonRibbonGroupButton58});
+            this.kryptonRibbonGroupLines14.MinimumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Large;
             // 
             // kryptonRibbonGroupButton13
             // 
-            this.kryptonRibbonGroupButton13.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton13.ImageLarge")));
-            this.kryptonRibbonGroupButton13.KeyTip = "W";
+            this.kryptonRibbonGroupButton13.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton13.ImageSmall")));
+            this.kryptonRibbonGroupButton13.KeyTip = "L";
             this.kryptonRibbonGroupButton13.TextLine1 = "Webリンク";
-            this.kryptonRibbonGroupButton13.ToolTipBody = "編集中のドキュメントにウェブサイトの\r\nURLを挿入します。";
+            this.kryptonRibbonGroupButton13.ToolTipBody = "WebサイトのURLをリッチテキストエディタに挿入します。";
             this.kryptonRibbonGroupButton13.ToolTipTitle = "Webリンク";
             this.kryptonRibbonGroupButton13.Click += new System.EventHandler(this.kryptonRibbonGroupButton13_Click);
+            // 
+            // kryptonRibbonGroupButton58
+            // 
+            this.kryptonRibbonGroupButton58.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton58.ImageSmall")));
+            this.kryptonRibbonGroupButton58.KeyTip = "U";
+            this.kryptonRibbonGroupButton58.TextLine1 = "URIスキーム";
+            this.kryptonRibbonGroupButton58.ToolTipBody = "URIスキームをリッチテキストエディタに挿入します。";
+            this.kryptonRibbonGroupButton58.Click += new System.EventHandler(this.kryptonRibbonGroupButton58_Click);
             // 
             // kryptonRibbonGroup14
             // 
@@ -2599,6 +2613,30 @@
             this.kryptonRibbonGroupButton20.ToolTipBody = "カスタマイズした日付と時刻を編集中\r\nのドキュメントに挿入します。";
             this.kryptonRibbonGroupButton20.ToolTipTitle = "カスタムの日付と時刻";
             this.kryptonRibbonGroupButton20.Click += new System.EventHandler(this.kryptonRibbonGroupButton20_Click);
+            // 
+            // kryptonRibbonGroup20
+            // 
+            this.kryptonRibbonGroup20.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup20.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup20.Image")));
+            this.kryptonRibbonGroup20.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple18});
+            this.kryptonRibbonGroup20.TextLine1 = "あいさつ";
+            // 
+            // kryptonRibbonGroupTriple18
+            // 
+            this.kryptonRibbonGroupTriple18.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton28});
+            this.kryptonRibbonGroupTriple18.MinimumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Large;
+            // 
+            // kryptonRibbonGroupButton28
+            // 
+            this.kryptonRibbonGroupButton28.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton28.ImageLarge")));
+            this.kryptonRibbonGroupButton28.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton28.ImageSmall")));
+            this.kryptonRibbonGroupButton28.KeyTip = "R";
+            this.kryptonRibbonGroupButton28.TextLine1 = "あいさつ文";
+            this.kryptonRibbonGroupButton28.ToolTipBody = "あいさつ文をリッチテキストエディタに挿入します。";
+            this.kryptonRibbonGroupButton28.ToolTipTitle = "あいさつ文";
+            this.kryptonRibbonGroupButton28.Click += new System.EventHandler(this.kryptonRibbonGroupButton28_Click_1);
             // 
             // kryptonRibbonTab3
             // 
@@ -3970,7 +4008,7 @@
             this.kryptonPage8});
             this.kryptonNavigator1.Palette = this.kryptonPalette1;
             this.kryptonNavigator1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonNavigator1.SelectedIndex = 1;
+            this.kryptonNavigator1.SelectedIndex = 3;
             this.kryptonNavigator1.Size = new System.Drawing.Size(312, 546);
             this.kryptonNavigator1.TabIndex = 44;
             this.kryptonNavigator1.Text = "kryptonNavigator1";
@@ -4527,7 +4565,6 @@
             // コピーToolStripMenuItem1
             // 
             this.コピーToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.コピーToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("コピーToolStripMenuItem1.Image")));
             this.コピーToolStripMenuItem1.Name = "コピーToolStripMenuItem1";
             this.コピーToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
             this.コピーToolStripMenuItem1.Text = "コピー";
@@ -4715,10 +4752,10 @@
             // 
             // ratingControl1
             // 
-            this.ratingControl1.Images = customImageCollection2;
+            this.ratingControl1.Images = customImageCollection5;
             this.ratingControl1.Location = new System.Drawing.Point(0, 0);
             this.ratingControl1.Name = "ratingControl1";
-            this.ratingControl1.ResetButton = resetButton2;
+            this.ratingControl1.ResetButton = resetButton5;
             this.ratingControl1.Size = new System.Drawing.Size(286, 125);
             this.ratingControl1.TabIndex = 50;
             this.ratingControl1.Text = "ratingControl1";
@@ -5679,8 +5716,6 @@
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton12;
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup10;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple8;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton13;
         private System.Windows.Forms.ImageList imageList1;
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup13;
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple10;
@@ -6112,12 +6147,18 @@
         private System.Windows.Forms.ToolStripSplitButton toolStripButton7;
         private System.Windows.Forms.ToolStripMenuItem 文字色ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem マーカー色ToolStripMenuItem;
-        public ComponentFactory.Krypton.Ribbon.ButtonSpecAppMenu buttonSpecAppMenu1;
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton24;
-        public ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterButton kryptonRibbonGroupClusterButton15;
-        public ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton14;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup20;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple18;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton28;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines14;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton13;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton58;
         public ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton15;
         public ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton39;
+        public ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterButton kryptonRibbonGroupClusterButton15;
+        public ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton14;
+        public ComponentFactory.Krypton.Ribbon.ButtonSpecAppMenu buttonSpecAppMenu1;
     }
 }
 

@@ -1,4 +1,4 @@
-﻿using ComponentFactory.Krypton.Ribbon;
+using ComponentFactory.Krypton.Ribbon;
 using ComponentFactory.Krypton.Toolkit;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using Syncfusion.Windows.Forms;
@@ -10,6 +10,7 @@ using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -73,6 +74,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2010;
             }
@@ -84,6 +86,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2013;
             }
@@ -95,6 +98,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2013;
             }
@@ -106,6 +110,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Default;
             }
@@ -117,6 +122,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Default;
             }
@@ -128,6 +134,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Default;
             }
@@ -139,6 +146,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2010;
             }
@@ -150,6 +158,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2010;
             }
@@ -161,6 +170,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2010;
             }
@@ -172,6 +182,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Default;
                 AllLabelsBoldPanel();
@@ -185,6 +196,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleOrange;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleOrange;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleOrange;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleOrange;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Default;
                 AllLabelsBoldPanel();
@@ -197,6 +209,7 @@ namespace RTEditor
                 kryptonCommandLinkButton1.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
                 kryptonCommandLinkButton2.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
                 kryptonCommandLinkButton3.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
+                kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Default;
                 AllLabelsBoldPanel();
@@ -1500,6 +1513,7 @@ namespace RTEditor
             }
         }
 
+        //フォントダイアログを表示してフォントの変更を行う
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
             using (FontDialog fontDialog = new FontDialog() { Font = label1.Font, ShowColor = true, Color = label1.ForeColor})
@@ -1553,6 +1567,7 @@ namespace RTEditor
             }
         }
 
+        //タイマーによる自動保存の有効・無効による自動保存間隔の設定の有効・無効の切り替え
         private void kryptonCheckBox5_CheckedChanged(object sender, EventArgs e)
         {
             if(kryptonCheckBox5.Checked == true)
@@ -1572,12 +1587,49 @@ namespace RTEditor
 
         }
 
+        //最近使用したドキュメントの一覧を削除
         private void kryptonCommandLinkButton3_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.RecentDocsPath = string.Empty;
             Properties.Settings.Default.Save();
             using (Microsoft.WindowsAPICodePack.Dialogs.TaskDialog taskDialog = new Microsoft.WindowsAPICodePack.Dialogs.TaskDialog() { Caption = "完了", InstructionText = "最近使用したドキュメントの一覧をすべて削除しました",Text = "最近使用したドキュメントの一覧はすべて削除しましたが再度ファイルの読み書きを行うと自動的に追加されます。", OwnerWindowHandle = this.Handle }) { taskDialog.Show(); }
             ;
+        }
+
+        //キャッシュファイルの削除
+        private void kryptonCommandLinkButton4_Click(object sender, EventArgs e)
+        {
+            using(Microsoft.WindowsAPICodePack.Dialogs.TaskDialog taskDialog = new Microsoft.WindowsAPICodePack.Dialogs.TaskDialog(){Caption = "キャッシュファイルの削除", InstructionText = "Edge WebView2とRTEditorの設定保存用キャッシュファイルを削除します", Text = "この操作を続行するとEdge WebView2のランタイムとRTEditorの設定が削除されアプリが初期化されこのソフトウェアを閉じます。閉じる前にすべてのファイルを保存しておくことを推奨します。この操作は元に戻せません。よろしいですか?",Icon = Microsoft.WindowsAPICodePack.Dialogs.TaskDialogStandardIcon.Information, StandardButtons = Microsoft.WindowsAPICodePack.Dialogs.TaskDialogStandardButtons.Yes | Microsoft.WindowsAPICodePack.Dialogs.TaskDialogStandardButtons.No, OwnerWindowHandle = this.Handle })
+            {
+
+                if(taskDialog.Show() == TaskDialogResult.Yes)
+                {
+                    try
+                    {
+                        //削除確認のメッセージボックスを表示
+                        string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+                        // キャッシュファイルの削除処理
+                        string edgeWebView2CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\RTEditor");
+                        string rtEditorCachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Cotton_Tofu");
+
+                        if (System.IO.Directory.Exists(edgeWebView2CachePath))
+                        {
+                            System.IO.Directory.Delete(edgeWebView2CachePath, true);
+                        }
+                        if (System.IO.Directory.Exists(rtEditorCachePath))
+                        {
+                            System.IO.Directory.Delete(rtEditorCachePath, true);
+                        }
+
+                        Application.Exit();
+                    }
+                    catch (Exception ex)
+                    {
+                        using (Microsoft.WindowsAPICodePack.Dialogs.TaskDialog ErrDialog = new Microsoft.WindowsAPICodePack.Dialogs.TaskDialog() { Caption = "エラー", InstructionText = "キャッシュファイルの削除中にエラーが発生しました", Text = $"エラーの詳細: {ex.Message}", OwnerWindowHandle = this.Handle }) { ErrDialog.Show(); };
+                    }
+                }
+            }
         }
     }
 }

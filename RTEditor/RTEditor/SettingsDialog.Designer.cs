@@ -1,4 +1,4 @@
-﻿namespace RTEditor
+namespace RTEditor
 {
     partial class SettingsDialog
     {
@@ -156,6 +156,10 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel19 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonPage6 = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.kryptonCommandLinkButton4 = new Krypton.Toolkit.KryptonCommandLinkButton();
+            this.kryptonPanel42 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonLabel37 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonPanel43 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonCommandLinkButton3 = new Krypton.Toolkit.KryptonCommandLinkButton();
             this.kryptonCommandLinkButton2 = new Krypton.Toolkit.KryptonCommandLinkButton();
             this.kryptonPanel27 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
@@ -266,6 +270,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage6)).BeginInit();
             this.kryptonPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel42)).BeginInit();
+            this.kryptonPanel42.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel27)).BeginInit();
             this.kryptonPanel27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel41)).BeginInit();
@@ -1901,6 +1908,8 @@
             // 
             this.kryptonPage6.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage6.AutoScroll = true;
+            this.kryptonPage6.Controls.Add(this.kryptonCommandLinkButton4);
+            this.kryptonPage6.Controls.Add(this.kryptonPanel42);
             this.kryptonPage6.Controls.Add(this.kryptonCommandLinkButton3);
             this.kryptonPage6.Controls.Add(this.kryptonCommandLinkButton2);
             this.kryptonPage6.Controls.Add(this.kryptonPanel27);
@@ -1916,6 +1925,71 @@
             this.kryptonPage6.Text = "リセット";
             this.kryptonPage6.ToolTipTitle = "Page ToolTip";
             this.kryptonPage6.UniqueName = "E3B25EDE51524574BFB451AB539A0751";
+            // 
+            // kryptonCommandLinkButton4
+            // 
+            this.kryptonCommandLinkButton4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonCommandLinkButton4.CommandLinkImageValues.Image = ((System.Drawing.Image)(resources.GetObject("kryptonCommandLinkButton4.CommandLinkImageValues.Image")));
+            this.kryptonCommandLinkButton4.CommandLinkTextValues.Description = "EdgeWebViewとRTEditorの設定を保存するキャッシュファイルを削除します。";
+            this.kryptonCommandLinkButton4.CommandLinkTextValues.DescriptionTextHAlignment = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonCommandLinkButton4.CommandLinkTextValues.DescriptionTextVAlignment = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.kryptonCommandLinkButton4.CommandLinkTextValues.Heading = "キャッシュファイルを削除";
+            this.kryptonCommandLinkButton4.CommandLinkTextValues.HeadingTextHAlignment = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonCommandLinkButton4.CommandLinkTextValues.HeadingTextVAlignment = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonCommandLinkButton4.Location = new System.Drawing.Point(19, 301);
+            this.kryptonCommandLinkButton4.Name = "kryptonCommandLinkButton4";
+            this.kryptonCommandLinkButton4.OverrideFocus.Border.Draw = Krypton.Toolkit.InheritBool.True;
+            this.kryptonCommandLinkButton4.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonCommandLinkButton4.OverrideFocus.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonCommandLinkButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonCommandLinkButton4.Size = new System.Drawing.Size(649, 61);
+            this.kryptonCommandLinkButton4.StateCommon.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonCommandLinkButton4.StateCommon.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.kryptonCommandLinkButton4.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonCommandLinkButton4.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonCommandLinkButton4.TabIndex = 13;
+            this.kryptonCommandLinkButton4.Click += new System.EventHandler(this.kryptonCommandLinkButton4_Click);
+            // 
+            // kryptonPanel42
+            // 
+            this.kryptonPanel42.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonPanel42.Controls.Add(this.kryptonLabel37);
+            this.kryptonPanel42.Controls.Add(this.kryptonPanel43);
+            this.kryptonPanel42.Location = new System.Drawing.Point(19, 267);
+            this.kryptonPanel42.Name = "kryptonPanel42";
+            this.kryptonPanel42.Palette = this.kryptonPalette1;
+            this.kryptonPanel42.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.kryptonPanel42.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuHeading;
+            this.kryptonPanel42.Size = new System.Drawing.Size(649, 28);
+            this.kryptonPanel42.TabIndex = 12;
+            // 
+            // kryptonLabel37
+            // 
+            this.kryptonLabel37.Dock = System.Windows.Forms.DockStyle.Left;
+            this.kryptonLabel37.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
+            this.kryptonLabel37.Location = new System.Drawing.Point(0, 0);
+            this.kryptonLabel37.Name = "kryptonLabel37";
+            this.kryptonLabel37.Palette = this.kryptonPalette1;
+            this.kryptonLabel37.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.kryptonLabel37.Size = new System.Drawing.Size(98, 26);
+            this.kryptonLabel37.TabIndex = 1;
+            this.kryptonLabel37.Values.Text = "キャッシュファイル";
+            // 
+            // kryptonPanel43
+            // 
+            this.kryptonPanel43.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.kryptonPanel43.Location = new System.Drawing.Point(0, 26);
+            this.kryptonPanel43.Name = "kryptonPanel43";
+            this.kryptonPanel43.Palette = this.kryptonPalette1;
+            this.kryptonPanel43.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.kryptonPanel43.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuSeparator;
+            this.kryptonPanel43.Size = new System.Drawing.Size(649, 2);
+            this.kryptonPanel43.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonPanel43.TabIndex = 0;
             // 
             // kryptonCommandLinkButton3
             // 
@@ -1955,7 +2029,7 @@
             this.kryptonCommandLinkButton2.CommandLinkTextValues.Heading = "設定をすべてリセット";
             this.kryptonCommandLinkButton2.CommandLinkTextValues.HeadingTextHAlignment = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonCommandLinkButton2.CommandLinkTextValues.HeadingTextVAlignment = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonCommandLinkButton2.Location = new System.Drawing.Point(19, 304);
+            this.kryptonCommandLinkButton2.Location = new System.Drawing.Point(19, 402);
             this.kryptonCommandLinkButton2.Name = "kryptonCommandLinkButton2";
             this.kryptonCommandLinkButton2.OverrideFocus.Border.Draw = Krypton.Toolkit.InheritBool.True;
             this.kryptonCommandLinkButton2.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -2042,7 +2116,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonPanel37.Controls.Add(this.kryptonLabel26);
             this.kryptonPanel37.Controls.Add(this.kryptonPanel38);
-            this.kryptonPanel37.Location = new System.Drawing.Point(19, 270);
+            this.kryptonPanel37.Location = new System.Drawing.Point(19, 368);
             this.kryptonPanel37.Name = "kryptonPanel37";
             this.kryptonPanel37.Palette = this.kryptonPalette1;
             this.kryptonPanel37.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -2507,6 +2581,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage6)).EndInit();
             this.kryptonPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel42)).EndInit();
+            this.kryptonPanel42.ResumeLayout(false);
+            this.kryptonPanel42.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel27)).EndInit();
             this.kryptonPanel27.ResumeLayout(false);
             this.kryptonPanel27.PerformLayout();
@@ -2697,5 +2775,9 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel35;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckBox kryptonCheckBox14;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel36;
+        private Krypton.Toolkit.KryptonCommandLinkButton kryptonCommandLinkButton4;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel42;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel37;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel43;
     }
 }

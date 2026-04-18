@@ -1,0 +1,14 @@
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\bin\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.exe
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\bin\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.deps.json
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\bin\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.runtimeconfig.json
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\bin\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.dll
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\bin\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.pdb
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\obj\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\obj\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.AssemblyInfoInputs.cache
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\obj\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.AssemblyInfo.cs
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\obj\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.csproj.CoreCompileInputs.cache
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\obj\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.dll
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\obj\Release\net10.0-windows\refint\DeleteEWVAndSettingsCaseFile.dll
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\obj\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.pdb
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\obj\Release\net10.0-windows\DeleteEWVAndSettingsCaseFile.genruntimeconfig.cache
+C:\Users\takah\Desktop\新しいフォルダー\source\repos\RTEditor\DeleteEWVAndSettingsCaseFile\obj\Release\net10.0-windows\ref\DeleteEWVAndSettingsCaseFile.dll

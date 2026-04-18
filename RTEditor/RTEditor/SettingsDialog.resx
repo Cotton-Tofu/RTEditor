@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -849,6 +849,22 @@
         YmyJxCUxlkSSkBg7ImQReRLrh8TDFGucl3OOBEF/1XnYX40iQdeiIzONS3ZSoH0fPns31xb8jdXX97z9
         gEjwJ42ZCYuca6SIahJL0dpHGgQqeeNw2K26yf+BSP3im1O7UnEpY08kaHkWrK1enRCyWbt20nw20I0o
         MhR+/ObforHLTr2gyOBmKrWSzUjNQ61WdSD4LzAotY3D8t5jDAH/AojcMT/xKQg1AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="kryptonCommandLinkButton4.CommandLinkImageValues.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAlNJREFUWEft1NtS2mAUBWDfo621ZTzSUlutgR8CSMiJpEolNVZ7eLV2PCCIYm1t
+        URBPKB6Y6XPkGfbF6vwg1UG8g1yxbsnMt3fYK319vfTSS4di/v2aNGtfHLP22TGul6zW37seDpvXSzCu
+        PiJxaZNetezWZ7oa42rBMS4XkLiYh161oJ+nSK/MuTeEdmFZetUi/TwF7ew9tMos1NMZUo5N94bgG2uV
+        WVJPZqAem1COElDKOillxb0h+MbKUYKUQx1yWYV8ICNejJNUlFwcoqzYckmmeCmOeDEGaT8KqRAmqSC6
+        NwTfWNqLUqwQQeyPiOnfQUzvBii6K7Qfwqx9StarVONVWkTjom0kqh/4RUM/m4NWSUI7nYF68g7qsVH/
+        j+VDDXJZQZy/6pIEab+xcawQvgMzRH/5Ef05hfDOJEW2J+5/J4zrRecWnn8QVtrBxRt472E4svMWkR8T
+        CG+/gZgfd1r9vsSl7TTgeodvqpTkVboD67dwqQlPt4EDbeDXCOfHIW75EMq9uD+AfjGf1M9Tzp0OQz3h
+        VTLQuGgN8gGH+WG1wqE28OR/WOTwZh1GcGOMWM6bavU7HjHvs8WtV9SEQxtesOwIscxo+yPsZMSczw5t
+        vqQGPIZgdhQsM0wsM+QG7rWDOS814WBmGIH0ILG0CzjjeHaUgtmROszWBxFY8xBLe7qPhzLDFsuMUBNm
+        ax74V5+RkB7oPs7D1occlq5vjMDqc/hXBkhYcQnn8a95nBsYwnI/CStP3MN5AqtPk8JyvyN8f+xMfXt0
+        /1PbSy+9PJB/kH/AJhZXiXEAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="kryptonCommandLinkButton3.CommandLinkImageValues.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

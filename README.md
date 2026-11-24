@@ -41,5 +41,7 @@ It replicates the UI style of Office 2007/2010, and you can change the theme in 
 
 I am currently migrating to WPF. It will take about 2–3 years to complete. I’m also thinking about creating a WinUI 3 version in the future!(As of 2026)
 
+We will be releasing a pre-release version as we near completion, so please stay tuned.
+
 <img width="1920" height="1040" alt="スクリーンショット 2026-11-24 233209" src="https://github.com/user-attachments/assets/35055db7-0e52-4b30-9a54-4034ac7c1a0e" />
 
